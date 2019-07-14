@@ -20,7 +20,7 @@ public class Patterns {
         burgerBuilder veggieBurger = new VeggieBurgerBuilder();
         
         bob.setBurgerBuilder(cheeseBurger);
-        bob.constructArepa();
+        bob.constructBurger();
         
         Burger burger = bob.getArepa();
         System.out.println(burger.getDrink());
@@ -130,7 +130,7 @@ public class Patterns {
             return burgerBuilder.getBurger();
         }
         
-        public void constructArepa(){
+        public void constructBurger(){
             burgerBuilder.createNewBurger();
             burgerBuilder.buildType();
             burgerBuilder.buildSauce();
